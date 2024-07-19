@@ -23,3 +23,6 @@ npm install
 npm start
 ```
 - Open your browser and go to http://localhost:3000
+- Student id will be given by centre for log in, but you can log in with id "STXXXX", replace XXXX with a number not exceed 7350 for example. 
+![example](ex1.png)
+![example](ex2.png)
