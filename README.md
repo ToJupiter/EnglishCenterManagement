@@ -4,8 +4,8 @@ This website help students at a english centre follow their schedule, lesson at 
 - Make sure you have installed and set up NodeJS and posgreSQL on you PC.
 - Clone the repository:
 ```sh
-git clone https://github.com/andrew-taphuc/Hotel-Reservation-HUST.git
-cd Hotel-Reservation-HUST
+git clone https://github.com/LeMaoJames/student_view.git
+cd student_view
 ```
 - Create database:
 ```sh
