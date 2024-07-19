@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Footer Style */
+    footer {
+      background-color: #f0f0f0; /* Light gray background */
+      padding: 18px;
+      text-align: right;
+    }
+
+    /* Navigation Bar Style */
+    .sidebar {
+      height: 100%;
+      width: 200px; /* Adjust width as needed */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding-top: 30px; /* Add padding for better visual */
+    }
+
+    .sidebar a {
+      display: block;
+      color: #fff;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #555;
+    }
+
+    /* Content Area Style */
+    .content {
+      margin-left: 200px; /* Same as sidebar width */
+      padding: 20px;
+    }
+    #progress-section {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    #progress-table th, #progress-table td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Style for completed lesson rows */
+    .completed-lesson {
+      background-color: #d4edda; /* Light green background */
+    }
+    .student-name {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <span class="student-name" style="float: right;">Welcome, <%= studentName %>!</span> 
+  </footer>
+
+  <div class="sidebar">
+    <a href="/view-status">View Status</a>
+    <a href="/view-entrance-test">View Entrance Test Result</a>
+    <a href="/logout">Logout</a>
+  </div>
+
+  <div class="content">
+    <h2>Student Dashboard</h2>
+
+    <div id="progress-section"> 
+      <h3>Your Progress</h3>
+      <% if (progressData.length > 0) { %>
+        <table id="progress-table">
+          <thead>
+            <tr>
+              <th>Class ID</th>
+              <th>Lesson Unit</th>
+              <th>Lesson Homework</th>
+              <th>Date and Time</th> 
+            </tr>
+          </thead>
+          <tbody>
+            <% progressData.forEach(progress => { %>
+              <% 
+                // Convert lesson_date to Date object
+                const lessonDate = new Date(progress.lesson_date);
+
+                // Get today's date at the beginning of the day
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+              %>
+              <tr class="<%= lessonDate < today ? 'completed-lesson' : '' %>"> 
+                <td><%= progress.class_id %></td>
+                <td><%= progress.lesson_unit %></td>
+                <td><%= progress.lesson_homework %></td>
+                <td><%= progress.date_time %></td> 
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      <% } else { %>
+        <p>No progress information found.</p>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>

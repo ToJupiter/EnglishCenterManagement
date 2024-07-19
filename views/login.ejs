@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url("https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #382020;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    /* Input Group Styles */
+    .input-group {
+      display: flex; 
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      margin-right: 10px;  /* Spacing between label and input */
+      width: 100px;         /* Adjust as needed for label width */
+    }
+
+    input[type="text"] {
+      flex: 1;             /* Input takes up remaining space */
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #f59300;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f5cc8e;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+      <div class="input-group">
+        <label for="student_id">Student ID:</label>
+        <input type="text" name="student_id" id="student_id" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

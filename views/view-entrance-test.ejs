@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Entrance Test Results</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      width: 70%; /* Adjust width as needed */
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .meeting-link a { 
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #007bff; /* Example - use your desired color */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .no-results {
+      margin-top: 20px;
+      font-style: italic;
+      color: #777;
+    }
+
+    .button-container { 
+      margin-top: 20px;
+      text-align: center; 
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f59300; 
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      transition: background-color 0.3s ease; 
+    }
+
+    .button:hover {
+      background-color: #f5cc8e;
+      cursor: pointer; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Your Entrance Test Results</h2>
+
+    <% if (testData.length > 0) { %>
+      <table>
+        <thead>
+          <tr>
+            <th>Test ID</th>
+            <th>General Score</th>
+            <th>Speaking Score</th>
+            <th>Meeting Link</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <% testData.forEach(test => { %>
+            <tr>
+              <td><%= test.testid %></td>
+              <td><%= test.generalscore %></td>
+              <td><%= test.speakingscore %></td>
+              <td class="meeting-link"> 
+                <% if (test.meetinglink) { %>
+                  <a href="https://<%= test.meetinglink %>" target="_blank" rel="noopener noreferrer">View Meeting</a>
+                <% } else { %>
+                  N/A
+                <% } %>
+              </td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p class="no-results">No entrance test results found.</p>
+    <% } %>
+    
+    <div class="button-container"> 
+      <button onclick="window.location.href='/dashboard'" class="button">Go Back</button>
+    </div>
+  </div>
+</body>
+</html>
