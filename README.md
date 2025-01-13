@@ -52,10 +52,10 @@ Your student ID will be provided by the English center. However, for testing pur
 | Role                                  | Contributor |
 | :------------------------------------ | :---------- |
 | 🗄️ **Database design:**               | [Hoang Yen Nhi](https://github.com/ryhoangf), [Nguyen Hoang Phuc](https://github.com/LeMaoJames/LeMaoJames), [Phan Hoang Hai](https://github.com/ToJupiter) |
-| 🏭 **Database data generation:**      |             |
-| 🔍 **Database queries:**              |             |
-| 📊 **Beautiful report and presentation:** |             |
-| 💻 **WebView design and implementation:** |             |
+| 🏭 **Database data generation:**      |  [Nguyen Hoang Phuc](https://github.com/LeMaoJames/LeMaoJames), [Phan Hoang Hai](https://github.com/ToJupiter) |
+| 🔍 **Database queries:**              | [Hoang Yen Nhi](https://github.com/ryhoangf), [Nguyen Hoang Phuc](https://github.com/LeMaoJames/LeMaoJames), [Phan Hoang Hai](https://github.com/ToJupiter) |
+| 📊 **Beautiful report and presentation:** |  [Hoang Yen Nhi](https://github.com/ryhoangf) |
+| 💻 **WebView design and implementation:** |  [Nguyen Hoang Phuc](https://github.com/LeMaoJames/LeMaoJames) |
 
 
 
