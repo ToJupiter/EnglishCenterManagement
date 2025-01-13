@@ -45,4 +45,19 @@ Your student ID will be provided by the English center. However, for testing pur
 ![example](ex1.png)
 ![example](ex2.png)
 
+## 🌟 Credits
+
+
+
+| Role                                  | Contributor |
+| :------------------------------------ | :---------- |
+| 🗄️ **Database design:**               | [Hoang Yen Nhi](https://github.com/ryhoangf), [Nguyen Hoang Phuc](https://github.com/LeMaoJames/LeMaoJames), [Phan Hoang Hai](https://github.com/ToJupiter) |
+| 🏭 **Database data generation:**      |             |
+| 🔍 **Database queries:**              |             |
+| 📊 **Beautiful report and presentation:** |             |
+| 💻 **WebView design and implementation:** |             |
+
+
+
+
 We hope you enjoy using **STUDENT\_WEB\_VIEW**! If you have any questions or feedback, don't hesitate to reach out! 😊
