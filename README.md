@@ -10,7 +10,7 @@ Let's get you set up! Follow these simple steps:
 2. **📥 Clone the Repository:** Open your terminal or command prompt and type in the following commands:
 
     ```sh
-    git clone https://github.com/LeMaoJames/student_view.git
+    https://github.com/ToJupiter/EnglishCenterManagement
     cd student_view
     ```
     This will download the project files to your computer and navigate you into the project directory.
