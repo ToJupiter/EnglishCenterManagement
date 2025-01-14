@@ -1,6 +1,7 @@
 # 🎓 English Centre Management: Student Web View ✨
 
 Welcome to the **STUDENT\_WEB\_VIEW**, a handy website designed to help students at our English center stay on top of their studies! 🚀 This platform allows you to easily track your schedule, review lessons, check your class status, and even view your entrance test results.
+Authors:  [Hoang Yen Nhi](https://github.com/ryhoangf), [Nguyen Hoang Phuc](https://github.com/LeMaoJames/LeMaoJames), [Phan Hoang Hai](https://github.com/ToJupiter)
 
 ## 🛠️ How to install
 
